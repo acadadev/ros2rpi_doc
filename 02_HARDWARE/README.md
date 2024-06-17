@@ -5,4 +5,4 @@ title: "Hardware Specifications"
 description: "ROS2RPI Hat Hardware Specifications"
 ---
 
-## Hardware Specifications
+**Hardware Specifications**

@@ -5,4 +5,4 @@ title: "Troubleshooting"
 description: "ROS2RPI Hat Troubleshooting information"
 ---
 
-## Troubleshooting
+**Troubleshooting**
