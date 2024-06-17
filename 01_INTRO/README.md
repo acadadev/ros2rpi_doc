@@ -1,7 +1,7 @@
 ---
 layout: default
 title_url: /01_INTRO/README.html
-title: "ROS2RPI Hat"
+title: "Introduction"
 description: "Introduction to ROS2RPI Hat"
 ---
 
