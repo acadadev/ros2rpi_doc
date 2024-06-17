@@ -6,3 +6,5 @@ description: "ROS2RPI Hat Software Drivers"
 ---
 
 **Software Drivers**
+
+__Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
