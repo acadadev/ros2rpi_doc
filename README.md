@@ -176,5 +176,5 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 ROS2RPI mounted a top RPI5
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="../images/ros2rpi.png.png" alt="ROS2RPI mounted a top RPI5" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="../images/ros2rpi.png" alt="ROS2RPI mounted a top RPI5" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
