@@ -10,7 +10,7 @@ The ROS2RPI HAT is a powerful add-on board designed specifically for Raspberry P
 - OLED Display Expansion: This port connects RPIs SPI peripheral to a Waveshare 240x280 SPI Display Module. 
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="/images/ros2rpi_top.jpg" alt="ROS2RPI Hat" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="images/ros2rpi_top.jpg" alt="ROS2RPI Hat" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 **Controlling ROS2RPI**
@@ -185,5 +185,5 @@ The ROSRiders driver leverages the I2C bus to communicate with the ROSRider card
 ROS2RPI mounted a top RPI5
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="/images/ros2rpi.png" alt="ROS2RPI mounted a top RPI5" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="images/ros2rpi.png" alt="ROS2RPI mounted a top RPI5" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
