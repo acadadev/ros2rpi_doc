@@ -24,9 +24,9 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
 | 5 | LIDAR_TX_ON | 0x20 | Connects the RPIs RX to Lidars TX |
 | 6 | LIDAR_PWM_ON | 0x40 | Connects RPIs GPIO19 to Lidars PWM input |
 
-**Example Programs in Python**
 
-**Haton with Lidar**
+
+**Example Python program to turn on both I2C Ports and Lidar**
 
 ```python
 #!/usr/bin/env python
@@ -60,7 +60,7 @@ with SMBus(1) as bus:
 
 ```
 
-**Haton Debug Mode**
+**Example Python program to turn on both I2C Ports, and switch serial to DEBUG**
 
 ```python
 #!/usr/bin/env python
@@ -93,7 +93,7 @@ with SMBus(1) as bus:
         print('IOError: %s' % e)
 ```
 
-**Hatoff**
+**Example Python program to set ROSRider to hibernate, and turn off all hat functionality**
 
 ```python
 #!/usr/bin/env python
@@ -125,6 +125,42 @@ with SMBus(1) as bus:
        print('IOError: %s' % e)
 ```
 
+**Example C function set ROS2RPI command**
+
+```c
+uint8_t send_hat_command(int fd, uint8_t output) {
+
+	int rv_hat = ioctl(fd, I2C_SLAVE, 0x20);
+	if(rv_hat<0) { return rv_hat; }
+
+    unsigned char hat_command[1] = {0};
+    int rw_hat = I2C_RW_Block(fd, 0x03, I2C_SMBUS_WRITE, 1, hat_command);
+
+    hat_command[0] = output;
+    rw_hat = I2C_RW_Block(fd, 0x01, I2C_SMBUS_WRITE, 1, hat_command);
+
+    return rw_hat;
+}
+```
+
+**Example C function to send System Control Commands to ROSRider**
+
+```c
+uint8_t send_sysctl(int fd, uint8_t command) {
+
+	unsigned char sysctl_buffer[5] = {0};
+	sysctl_buffer[3] = command;
+
+	uint8_t rw = I2C_RW_Block(fd, 0x04, I2C_SMBUS_WRITE, 5, sysctl_buffer);
+	if(rw == 0) { 
+		return 0; 
+	} else {
+		RCLCPP_INFO(this->get_logger(), "I2C Error: %s", strerror(rw));
+		return rw;
+	}
+
+}
+```
 
 **Instrumenting Linux**
 
