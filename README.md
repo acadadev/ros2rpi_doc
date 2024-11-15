@@ -37,6 +37,8 @@ The image depicts the physical connection between the ROS2RPi HAT and ROSRider c
 
 #### Example Python program to turn on both I2C Ports and Lidar
 
+Create a file named `haton.py` under `$HOME\bin` and put the code below inside it
+
 ```python
 #!/usr/bin/env python
 import string
@@ -103,6 +105,8 @@ with SMBus(1) as bus:
 ```
 
 #### Example Python program to set ROSRider to hibernate, and turn off all hat functionality
+
+Create a file named `hatoff.py` under `$HOME\bin` and put the code below inside it
 
 ```python
 #!/usr/bin/env python
