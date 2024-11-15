@@ -171,10 +171,37 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 }
 ```
 
-#### Instrumenting Linux
+#### Instrumenting Linux to HATON at boot time
 
-[TODO: haton at boot time]  
-[TODO: hatoff at boot time]  
+```systemd
+[Unit]
+Description=Turns ROS2RPI on
+After=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=false
+ExecStart=/usr/bin/python /home/ubuntu/bin/haton.py
+
+[Install]
+WantedBy=multi-user.target
+```
+
+#### Instrumenting Linux to HATOFF at shutdown
+
+```systemd
+[Unit]
+Description=Turns ROS2RPI off
+After=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStop=/usr/bin/python /home/ubuntu/bin/hatoff.py
+
+[Install]
+WantedBy=multi-user.target
+```
 
 **Important Node**
 
