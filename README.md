@@ -15,7 +15,7 @@ The ROS2RPI HAT is a powerful add-on board designed specifically for Raspberry P
 Sending one byte to I2C address `0x20` we can control all the peripherals on the device.
 
 | bit | function | mask |
-| --- | --- | --- |
+| ----- | ----- | ----- |
 | 0 | PSEL_3V3_A | 0x01 |
 | 1 | PSEL_3V3_B | 0x02 |
 | 2 | SERIAL_RX_ON | 0x04 |
