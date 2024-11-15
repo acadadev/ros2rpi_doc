@@ -174,7 +174,11 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 
 While we can leverage Python scripts to manage peripheral control at boot and shutdown, the ROSRiders driver offers a software-based approach to dynamically activate and deactivate peripherals in response to ROS node lifecycle events.
 
-[TODO: ROS2RPi board connection with qwic table]  
+**ROS2RPI connected to ROSRider with QWIC Cable**
+
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+   <img src="images/rosrider_ros2rpi_qwic.png" alt="ROS2RPI connected to ROSRider with QWIC Cable" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+</div>
 
 **Understanding Hibernation** 
 
