@@ -8,7 +8,7 @@ The ROS2RPI HAT is a powerful add-on board designed specifically for Raspberry P
 - The ROS2RPI HAT offers a flexible serial port that can be configured for either LIDAR communication or external debugging. This dual-purpose functionality enables remote debugging and troubleshooting, enhancing the HAT's versatility and ease of use.
 - Active Cooling: A 30mm fan and metal heat sink at the bottom ensures optimal thermal performance, especially during intensive processing or sensor data acquisition.
 
-[![ROS2RPI Hat](/images/ros2rpi.jpg)](https://acada.dev/products/ros2rpi-control-hat-v4)
+[![ROS2RPI Hat](/images/ros2rpi_top.jpg)](https://acada.dev/products/ros2rpi-control-hat-v4)
 
 **Controlling ROS2RPI**
 
