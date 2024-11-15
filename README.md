@@ -126,7 +126,7 @@ with SMBus(1) as bus:
    TCA6408_CONFIGURATION = 0x03
    TCA6406_ADDRESS = 0x20
 
-   # turn all off on the RPI2ROS board
+   # turn the ROS2RPI board off
    try:
        bus.write_byte_data(TCA6406_ADDRESS, TCA6408_CONFIGURATION, 0x00)
        bus.write_byte_data(TCA6406_ADDRESS, TCA6408_OUTPUT, 0x0)
