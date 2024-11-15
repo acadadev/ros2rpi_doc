@@ -134,7 +134,7 @@ with SMBus(1) as bus:
        print('IOError: %s' % e)
 ```
 
-#### Example C function set ROS2RPI command
+#### Example C function send ROS2RPI command
 
 ```c
 uint8_t send_hat_command(int fd, uint8_t output) {
