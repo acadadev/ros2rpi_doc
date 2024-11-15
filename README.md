@@ -142,13 +142,13 @@ uint8_t send_hat_command(int fd, uint8_t output) {
 	int rv_hat = ioctl(fd, I2C_SLAVE, 0x20);
 	if(rv_hat<0) { return rv_hat; }
 
-    unsigned char hat_command[1] = {0};
-    int rw_hat = I2C_RW_Block(fd, 0x03, I2C_SMBUS_WRITE, 1, hat_command);
+	unsigned char hat_command[1] = {0};
+	int rw_hat = I2C_RW_Block(fd, 0x03, I2C_SMBUS_WRITE, 1, hat_command);
 
-    hat_command[0] = output;
-    rw_hat = I2C_RW_Block(fd, 0x01, I2C_SMBUS_WRITE, 1, hat_command);
+	hat_command[0] = output;
+	rw_hat = I2C_RW_Block(fd, 0x01, I2C_SMBUS_WRITE, 1, hat_command);
 
-    return rw_hat;
+	return rw_hat;
 }
 ```
 
