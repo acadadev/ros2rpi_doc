@@ -207,9 +207,7 @@ sudo systemctl enable haton
 
 If successful, you should see output similar to:
 
-```console
-Created symlink /etc/systemd/system/multi-user.target.wants/haton.service → /usr/lib/systemd/system/haton.service.
-```
+> Created symlink /etc/systemd/system/multi-user.target.wants/haton.service → /usr/lib/systemd/system/haton.service.
 
 The system will execute `haton.py` at boottime.
 
@@ -246,9 +244,7 @@ sudo systemctl enable hatoff
 
 If successful, you should see output similar to:
 
-```console
-Created symlink /etc/systemd/system/multi-user.target.wants/hatoff.service → /usr/lib/systemd/system/hatoff.service.
-```
+> Created symlink /etc/systemd/system/multi-user.target.wants/hatoff.service → /usr/lib/systemd/system/hatoff.service.
 
 The system will execute `hatoff.py` at shutdown.
 
