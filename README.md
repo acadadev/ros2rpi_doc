@@ -7,6 +7,7 @@ The ROS2RPI HAT is a powerful add-on board designed specifically for Raspberry P
 - LIDAR Integration: A dedicated port for connecting Lidar sensors, directly interfaced with the Raspberry Pi's hardware serial port.
 - The ROS2RPI HAT offers a flexible serial port that can be configured for either LIDAR communication or external debugging. This dual-purpose functionality enables remote debugging and troubleshooting, enhancing the HAT's versatility and ease of use.
 - Active Cooling: A 30mm fan and metal heat sink at the bottom ensures optimal thermal performance, especially during intensive processing or sensor data acquisition.
+- OLED Display Expansion: This port connects RPIs SPI peripheral to a Waveshare 240x280 SPI Display Module. 
 
 [![ROS2RPI Hat](/images/ros2rpi_top.jpg)](https://acada.dev/products/ros2rpi-control-hat-v4)
 
@@ -164,8 +165,19 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 
 **Instrumenting Linux**
 
-haton at boot time
-hatoff at shutdown time
+[TODO: haton at boot time]
+[TODO: hatoff at boot time]
+[TODO: reminder: rosrider driver does it too, so no need if using that with ROS2RPI]
+
+---
+
+ROS2RPI mounted a top RPI5
+
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+   <img src="../images/ros2rpi.png.png" alt="ROS2RPI mounted a top RPI5" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+</div>
+
+---
 
 - [Introduction](01_INTRO/README.md)
 - [Hardware Specifications](02_HARDWARE/README.md)
