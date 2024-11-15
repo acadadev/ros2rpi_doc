@@ -16,11 +16,11 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
 
 | bit | function | mask | description |
 | ----- | ----- | ----- | ----- |
-| 0 | PSEL_3V3_A | 0x01 | Powers on QWIC port A |
-| 1 | PSEL_3V3_B | 0x02 | Powers on QWIC port B |
+| 0 | PSEL_3V3_A | 0x01 | Powers on I2C Bus Voltage-Level Translator A |
+| 1 | PSEL_3V3_B | 0x02 | Powers on I2C Bus Voltage-Level Translator B |
 | 2 | SERIAL_RX_ON | 0x04 | Connects the RPIs RX to debug port RX |
 | 3 | SERIAL_TX_ON | 0x08 | Connects the RPIs TX to debug port TX |
-| 4 | PSEL_LIDAR | 0x10 | Lidar Power ON |
+| 4 | PSEL_LIDAR | 0x10 | LIDAR Power ON |
 | 5 | LIDAR_TX_ON | 0x20 | Connects the RPIs RX to Lidars TX |
 | 6 | LIDAR_PWM_ON | 0x40 | Connects RPIs GPIO19 to Lidars PWM input |
 
@@ -30,7 +30,6 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
 
 ```python
 #!/usr/bin/env python
-
 import string
 import struct
 import sys
@@ -65,7 +64,6 @@ with SMBus(1) as bus:
 
 ```python
 #!/usr/bin/env python
-
 import string
 import struct
 import sys
@@ -99,7 +97,6 @@ with SMBus(1) as bus:
 
 ```python
 #!/usr/bin/env python
-
 import string
 import struct
 import sys
