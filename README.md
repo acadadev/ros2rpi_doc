@@ -157,7 +157,7 @@ uint8_t send_hat_command(int fd, uint8_t output) {
 ```c
 uint8_t send_sysctl(int fd, uint8_t command) {
 
-unsigned char sysctl_buffer[5] = {0};
+  unsigned char sysctl_buffer[5] = {0};
   sysctl_buffer[3] = command;
 
   uint8_t rw = I2C_RW_Block(fd, 0x04, I2C_SMBUS_WRITE, 5, sysctl_buffer);
