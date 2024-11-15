@@ -31,7 +31,7 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
 
 The image depicts the physical connection between the ROS2RPi HAT and ROSRider cards using a standard QWIC cable. The ROSRider card's additional QWIC port facilitates cascading configurations, enabling the expansion of the system with multiple ROSRider units or other compatible QWIC devices.
 
-<div style="display: flex; margin: 25px 0;">
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
    <img src="images/rosrider_ros2rpi_qwic.png" alt="Connected to ROSRider with QWIC Cable" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
    <img src="images/qwic_connectors.jpg" alt="Various QWIC Cables" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
