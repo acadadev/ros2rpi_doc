@@ -1,4 +1,4 @@
-**Overview**
+#### Overview
 
 The ROS2RPI HAT is a powerful add-on board designed specifically for Raspberry Pi 4/5 models. It enhances the capabilities of your Raspberry Pi by providing a range of features, including:
 
@@ -13,7 +13,7 @@ The ROS2RPI HAT is a powerful add-on board designed specifically for Raspberry P
    <img src="images/ros2rpi_top.jpg" alt="ROS2RPI Hat" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-**Controlling ROS2RPI**
+#### Controlling ROS2RPI
 
 Sending one byte to I2C address `0x20` we can control all the peripherals on the device.
 
@@ -27,9 +27,15 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
 | 5 | LIDAR_TX_ON | 0x20 | Connects the RPIs RX to Lidars TX |
 | 6 | LIDAR_PWM_ON | 0x40 | Connects RPIs GPIO19 to Lidars PWM input |
 
+#### ROS2RPI connected to ROSRider with QWIC Cable
 
+The image depicts the physical connection between the ROS2RPi HAT and ROSRider cards using a standard QWIC cable. The ROSRider card's additional QWIC port facilitates cascading configurations, enabling the expansion of the system with multiple ROSRider units or other compatible QWIC devices.
 
-**Example Python program to turn on both I2C Ports and Lidar**
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+   <img src="images/rosrider_ros2rpi_qwic.png" alt="ROS2RPI connected to ROSRider with QWIC Cable" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+</div>
+
+#### Example Python program to turn on both I2C Ports and Lidar
 
 ```python
 #!/usr/bin/env python
@@ -63,7 +69,7 @@ with SMBus(1) as bus:
 
 ```
 
-**Example Python program to turn on both I2C Ports, and switch serial to DEBUG**
+#### Example Python program to turn on both I2C Ports, and switch serial to DEBUG
 
 ```python
 #!/usr/bin/env python
@@ -96,7 +102,7 @@ with SMBus(1) as bus:
         print('IOError: %s' % e)
 ```
 
-**Example Python program to set ROSRider to hibernate, and turn off all hat functionality**
+#### Example Python program to set ROSRider to hibernate, and turn off all hat functionality
 
 ```python
 #!/usr/bin/env python
@@ -128,7 +134,7 @@ with SMBus(1) as bus:
        print('IOError: %s' % e)
 ```
 
-**Example C function set ROS2RPI command**
+#### Example C function set ROS2RPI command
 
 ```c
 uint8_t send_hat_command(int fd, uint8_t output) {
@@ -146,7 +152,7 @@ uint8_t send_hat_command(int fd, uint8_t output) {
 }
 ```
 
-**Example C function to send System Control Commands to ROSRider**
+#### Example C function to send System Control Commands to ROSRider
 
 ```c
 uint8_t send_sysctl(int fd, uint8_t command) {
@@ -165,7 +171,7 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 }
 ```
 
-**Instrumenting Linux**
+#### Instrumenting Linux
 
 [TODO: haton at boot time]  
 [TODO: hatoff at boot time]  
@@ -174,17 +180,11 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 
 While we can leverage Python scripts to manage peripheral control at boot and shutdown, the ROSRiders driver offers a software-based approach to dynamically activate and deactivate peripherals in response to ROS node lifecycle events.
 
-**ROS2RPI connected to ROSRider with QWIC Cable**
-
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="images/rosrider_ros2rpi_qwic.png" alt="ROS2RPI connected to ROSRider with QWIC Cable" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-</div>
-
-**Understanding Hibernation** 
+#### Understanding Hibernation
 
 The ROSRiders driver leverages the I2C bus to communicate with the ROSRider card. By powering the I2C port on the ROS2RPi, a wake-up signal is generated, awakening the ROSRider card from a low-power state. This allows for efficient power management and quick activation when needed.
 
----
+#### ROS2RPI Compatibility
 
 ROS2RPI mounted a top RPI5, as seen in the picture all the ports including display ports can be reached.
 
