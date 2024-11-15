@@ -14,18 +14,17 @@ The ROS2RPI HAT is a powerful add-on board designed specifically for Raspberry P
 
 Sending one byte to I2C address `0x20` we can control all the peripherals on the device.
 
-| bit | function | mask |
-| ----- | ----- | ----- |
-| 0 | PSEL_3V3_A | 0x01 |
-| 1 | PSEL_3V3_B | 0x02 |
-| 2 | SERIAL_RX_ON | 0x04 |
-| 3 | SERIAL_TX_ON | 0x08 |
-| 4 | PSEL_LIDAR | 0x10 |
-| 5 | LIDAR_TX_ON | 0x20 |
-| 6 | LIDAR_PWM_ON | 0x40 |
+| bit | function | mask | description |
+| ----- | ----- | ----- | ----- |
+| 0 | PSEL_3V3_A | 0x01 | Powers on QWIC port A |
+| 1 | PSEL_3V3_B | 0x02 | Powers on QWIC port B |
+| 2 | SERIAL_RX_ON | 0x04 | Connects the RPIs RX to debug port RX |
+| 3 | SERIAL_TX_ON | 0x08 | Connects the RPIs TX to debug port TX |
+| 4 | PSEL_LIDAR | 0x10 | Lidar Power ON |
+| 5 | LIDAR_TX_ON | 0x20 | Connects the RPIs RX to Lidars TX |
+| 6 | LIDAR_PWM_ON | 0x40 | Connects RPIs GPIO19 to Lidars PWM input |
 
-
-**Software**
+**Example Programs in Python**
 
 **Haton with Lidar**
 
@@ -46,11 +45,11 @@ with SMBus(1) as bus:
     TCA6408_CONFIGURATION = 0x03
     TCA6406_ADDRESS = 0x20
 
-    # PSEL_3V3_A	P0  0x01
-    # PSEL_3V3_B	P1  0x02
-    # SERIAL_RX_ON	P2  0x04
-    # SERIAL_TX_ON	P3  0x08
-    # PSEL_LIDAR	P4 	0x10
+    # PSEL_3V3_A	P0	0x01
+    # PSEL_3V3_B	P1	0x02
+    # SERIAL_RX_ON	P2	0x04
+    # SERIAL_TX_ON	P3	0x08
+    # PSEL_LIDAR	P4	0x10
     # LIDAR_TX_ON	P5	0x20
     # LIDAR_PWM_ON	P6	0x40
 
