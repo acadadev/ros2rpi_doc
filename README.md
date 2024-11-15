@@ -15,7 +15,7 @@ The ROS2RPI HAT is a powerful add-on board designed specifically for Raspberry P
 Sending one byte to I2C address `0x20` we can control all the peripherals on the device.
 
 | bit | function | mask |
-| --- | --- | 0x01 |
+| --- | --- | --- |
 | 0 | PSEL_3V3_A | 0x01 |
 | 1 | PSEL_3V3_B | 0x02 |
 | 2 | SERIAL_RX_ON | 0x04 |
@@ -47,9 +47,9 @@ with SMBus(1) as bus:
     TCA6406_ADDRESS = 0x20
 
     # PSEL_3V3_A	P0  0x01
-    # PSEL_3V3_B    P1  0x02
-    # SERIAL_RX_ON  P2  0x04
-    # SERIAL_TX_ON  P3  0x08
+    # PSEL_3V3_B	P1  0x02
+    # SERIAL_RX_ON	P2  0x04
+    # SERIAL_TX_ON	P3  0x08
     # PSEL_LIDAR	P4 	0x10
     # LIDAR_TX_ON	P5	0x20
     # LIDAR_PWM_ON	P6	0x40
@@ -82,9 +82,9 @@ with SMBus(1) as bus:
     TCA6406_ADDRESS = 0x20
 
     # PSEL_3V3_A	P0  0x01
-    # PSEL_3V3_B    P1  0x02
-    # SERIAL_RX_ON  P2  0x04
-    # SERIAL_TX_ON  P3  0x08
+    # PSEL_3V3_B	P1  0x02
+    # SERIAL_RX_ON	P2  0x04
+    # SERIAL_TX_ON	P3  0x08
     # PSEL_LIDAR	P4 	0x10
     # LIDAR_TX_ON	P5	0x20
     # LIDAR_PWM_ON	P6	0x40
