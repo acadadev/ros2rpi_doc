@@ -168,6 +168,8 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 [TODO: haton at boot time]
 [TODO: hatoff at boot time]
 [TODO: reminder: rosrider driver does it too, so no need if using that with ROS2RPI]
+[TODO: ROS2RPi board connection with qwic table]
+[TODO: explain power on at port on]
 
 ---
 
@@ -176,10 +178,3 @@ ROS2RPI mounted a top RPI5
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
    <img src="../images/ros2rpi.png.png" alt="ROS2RPI mounted a top RPI5" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
-
----
-
-- [Introduction](01_INTRO/README.md)
-- [Hardware Specifications](02_HARDWARE/README.md)
-- [Software Drivers](03_SOFTWARE/README.md)
-- [Troubleshooting](10_DEBUG/README.md)
