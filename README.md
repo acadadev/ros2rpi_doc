@@ -36,6 +36,8 @@ The image depicts the physical connection between the ROS2RPi HAT and ROSRider c
    <img src="images/qwic_connectors.jpg" alt="Various QWIC Cables" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
+Qwiic cables are a popular choice for connecting various sensors and actuators to microcontrollers and other devices. They feature a 4-wire JST-SH connector on each end. One unique aspect of Qwiic cables is their asymmetrical orientation. One connector will typically be `top-facing` while the other is `bottom-facing.` This deliberate design choice helps with cable routing and prevents accidental misconnections, making it easier to create clean and organized setups.
+
 #### Example Python program to turn on both I2C Ports and Lidar
 
 Create a file named `haton.py` under `$HOME\bin` and put the code below inside it
