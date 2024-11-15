@@ -173,6 +173,15 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 
 #### Instrumenting Linux to HATON at boot time
 
+Change directory to `/lib/systemd/system` and create `haton.service` file by typing the following commands:
+
+```console
+cd /lib/systemd/system  
+sudo nano haton.service
+```
+
+Inside this file insert the following input:
+
 ```systemd
 [Unit]
 Description=Turns ROS2RPI on
@@ -188,6 +197,15 @@ WantedBy=multi-user.target
 ```
 
 #### Instrumenting Linux to HATOFF at shutdown
+
+Change directory to `/lib/systemd/system` and create `hatoff.service` file by typing the following commands:
+
+```console
+cd /lib/systemd/system  
+sudo nano hatoff.service
+```
+
+Inside this file insert the following input:
 
 ```systemd
 [Unit]
