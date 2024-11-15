@@ -14,4 +14,4 @@ The ROS2RPI HAT is a powerful add-on board designed specifically for Raspberry P
 - [Software Drivers](03_SOFTWARE/README.md)
 - [Troubleshooting](10_DEBUG/README.md)
 
-[![ROS2RPI Hat](/images/ros2rpi.png)](https://acada.dev/products/ros2rpi-control-hat-v4)
+[![ROS2RPI Hat](./ros2rpi.png)](https://acada.dev/products/ros2rpi-control-hat-v4)
