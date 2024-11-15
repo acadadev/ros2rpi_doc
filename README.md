@@ -165,11 +165,11 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 
 **Instrumenting Linux**
 
-[TODO: haton at boot time]
-[TODO: hatoff at boot time]
-[TODO: reminder: rosrider driver does it too, so no need if using that with ROS2RPI]
-[TODO: ROS2RPi board connection with qwic table]
-[TODO: explain power on at port on]
+[TODO: haton at boot time]  
+[TODO: hatoff at boot time]  
+[TODO: reminder: rosrider driver does it too, so no need if using that with ROS2RPI]  
+[TODO: ROS2RPi board connection with qwic table]  
+[TODO: explain power on at port on]  
 
 ---
 
