@@ -167,7 +167,6 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 	RCLCPP_INFO(this->get_logger(), "I2C Error: %s", strerror(rw));
 	return rw;
   }
-
 }
 ```
 
