@@ -195,6 +195,20 @@ ExecStart=/usr/bin/python /home/ubuntu/bin/haton.py
 WantedBy=multi-user.target
 ```
 
+Enable haton service by:
+
+```console
+sudo systemctl enable haton
+```
+
+If successful, you should see output similar to:
+
+```console
+Created symlink /etc/systemd/system/multi-user.target.wants/haton.service → /usr/lib/systemd/system/haton.service.
+```
+
+The system will execute `haton.py` at boottime.
+
 #### Instrumenting Linux to HATOFF at shutdown
 
 Change directory to `/lib/systemd/system` and create `hatoff.service` file by typing the following commands:
@@ -219,6 +233,20 @@ ExecStop=/usr/bin/python /home/ubuntu/bin/hatoff.py
 [Install]
 WantedBy=multi-user.target
 ```
+
+Enable hatoff service by:
+
+```console
+sudo systemctl enable hatoff
+```
+
+If successful, you should see output similar to:
+
+```console
+Created symlink /etc/systemd/system/multi-user.target.wants/hatoff.service → /usr/lib/systemd/system/hatoff.service.
+```
+
+The system will execute `hatoff.py` at shutdown.
 
 **Important Node**
 
