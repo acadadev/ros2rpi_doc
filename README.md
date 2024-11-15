@@ -10,7 +10,7 @@ The ROS2RPI HAT is a powerful add-on board designed specifically for Raspberry P
 - OLED Display Expansion: This port connects RPIs SPI peripheral to a Waveshare 240x280 SPI Display Module. 
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="/images/ros2rpi_top.jpg alt="ROS2RPI Hat" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="/images/ros2rpi_top.jpg" alt="ROS2RPI Hat" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 **Controlling ROS2RPI**
@@ -169,9 +169,16 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 
 [TODO: haton at boot time]  
 [TODO: hatoff at boot time]  
-[TODO: reminder: rosrider driver does it too, so no need if using that with ROS2RPI]  
+
+**Important Node**
+
+While we can leverage Python scripts to manage peripheral control at boot and shutdown, the ROSRiders driver offers a software-based approach to dynamically activate and deactivate peripherals in response to ROS node lifecycle events.
+
 [TODO: ROS2RPi board connection with qwic table]  
-[TODO: explain power on at port on]  
+
+**Understanding Hibernation** 
+
+The ROSRiders driver leverages the I2C bus to communicate with the ROSRider card. By powering the I2C port on the ROS2RPi, a wake-up signal is generated, awakening the ROSRider card from a low-power state. This allows for efficient power management and quick activation when needed.
 
 ---
 
