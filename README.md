@@ -38,6 +38,37 @@ The image depicts the physical connection between the ROS2RPi HAT and ROSRider c
 
 Qwiic cables are a popular choice for connecting various sensors and actuators to microcontrollers and other devices. They feature a 4-wire JST-SH connector on each end. One unique aspect of Qwiic cables is their asymmetrical orientation. One connector will typically be `top-facing` while the other is `bottom-facing.` This deliberate design choice helps with cable routing and prevents accidental misconnections, making it easier to create clean and organized setups.
 
+#### Prerequisites
+
+In order to send I2C commands from your host with Python, you need to install the `python3-smbus2` library and ensure you're in the
+`i2c` group:
+
+For Ubuntu 22.04:
+
+```console
+sudo apt install python3-smbus2
+```
+
+For Ubuntu 24.04:
+
+```console
+pip3 install python3-smbus2
+```
+
+To ensure you're in the `i2c` group, check the `/etc/group` file or run the following command:
+
+```console
+groups
+```
+
+If you're not listed, you'll need to add yourself to the group using the following command:
+Bash
+```bash
+sudo usermod -aG i2c $USER
+```
+
+Remember to log out and log back in for the group membership change to take effect.
+
 #### Example Python program to turn on both I2C Ports and Lidar
 
 Create a file named `haton.py` under `$HOME\bin` and put the code below inside it
@@ -122,7 +153,7 @@ from smbus2 import SMBus
 
 with SMBus(1) as bus:
 
-   # send hibernate command to ROSRIDER
+   # send hibernate command to ROSRider
    try:
       # 0x04 is sys_ctl address
       bus.write_i2c_block_data(0x3C, 0x04, [0,0,0,0x05])
