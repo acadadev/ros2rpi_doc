@@ -45,19 +45,19 @@ In order to send I2C commands from your host with Python, you need to install th
 
 For Ubuntu 22.04:
 
-```console
+```bash
 sudo apt install python3-smbus2
 ```
 
 For Ubuntu 24.04:
 
-```console
+```bash
 pip3 install python3-smbus2
 ```
 
 To ensure you're in the `i2c` group, check the `/etc/group` file or run the following command:
 
-```console
+```bash
 groups
 ```
 
@@ -212,7 +212,7 @@ uint8_t send_sysctl(int fd, uint8_t command) {
 
 Change directory to `/lib/systemd/system` and create `haton.service` file by typing the following commands:
 
-```console
+```bash
 cd /lib/systemd/system  
 sudo nano haton.service
 ```
@@ -235,7 +235,7 @@ WantedBy=multi-user.target
 
 Enable haton service by:
 
-```console
+```bash
 sudo systemctl enable haton
 ```
 
@@ -249,7 +249,7 @@ The system will execute `haton.py` at boottime.
 
 Change directory to `/lib/systemd/system` and create `hatoff.service` file by typing the following commands:
 
-```console
+```bash
 cd /lib/systemd/system  
 sudo nano hatoff.service
 ```
@@ -272,7 +272,7 @@ WantedBy=multi-user.target
 
 Enable hatoff service by:
 
-```console
+```bash
 sudo systemctl enable hatoff
 ```
 
