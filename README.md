@@ -299,8 +299,8 @@ Enable haton service by:
 If successful, you should see output similar to:
 
 <pre class="terminal">
-<span class='shell'>&gt; </span><span class='cmd'>echo</span> <span class='str'>"Created symlink /etc/systemd/system/multi-user.target.wants/haton.service → /usr/lib/systemd/system/haton.service."</span>
-Created symlink /etc/systemd/system/multi-user.target.wants/haton.service → /usr/lib/systemd/system/haton.service.
+<span class='shell'>&gt; </span><span class='cmd'>Created</span> <span class='arg'>symlink</span> <span class='arg'>/etc/systemd/system/multi-user.target.wants/haton.service</span> <span class='arg'>→</span> <span class='arg'>/usr/lib/systemd/system/haton.service.</span>
+bash: line 1: Created: command not found
 <span class='shell'>&gt; </span><span class='caret'> </span>
 </pre>
 
@@ -360,8 +360,8 @@ Enable hatoff service by:
 If successful, you should see output similar to:
 
 <pre class="terminal">
-<span class='shell'>&gt; </span><span class='cmd'>echo</span> <span class='str'>"Created symlink /etc/systemd/system/multi-user.target.wants/hatoff.service → /usr/lib/systemd/system/hatoff.service."</span>
-Created symlink /etc/systemd/system/multi-user.target.wants/hatoff.service → /usr/lib/systemd/system/hatoff.service.
+<span class='shell'>&gt; </span><span class='cmd'>Created</span> <span class='arg'>symlink</span> <span class='arg'>/etc/systemd/system/multi-user.target.wants/hatoff.service</span> <span class='arg'>→</span> <span class='arg'>/usr/lib/systemd/system/hatoff.service.</span>
+bash: line 1: Created: command not found
 <span class='shell'>&gt; </span><span class='caret'> </span>
 </pre>
 
