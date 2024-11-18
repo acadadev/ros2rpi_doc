@@ -40,5 +40,29 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
+    <script type="module" src="/modules/clipboard-copy-element/dist/index.js"></script>
+    <script>
+      document.addEventListener('clipboard-copy', function (event) {
+        const element = event.target;
+        const svg_copy = element.querySelector('.js-clipboard-copy-icon');
+        const svg_ok = element.querySelector('.js-clipboard-check-icon');
+        svg_copy.classList.add('d-none');
+        svg_ok.classList.remove('d-none');
+        setTimeout(function () {
+          svg_copy.classList.remove('d-none');
+          svg_ok.classList.add('d-none');
+        }, 2000);
+
+      });
+      const replays = document.querySelectorAll('.replay');
+      replays.forEach(image => {
+        image.addEventListener('click', function(event) {
+          const timestamp = new Date().getTime();
+          const current_src = image.src;
+          image.src = current_src + '?' + timestamp;
+          event.preventDefault();
+        });
+      });
+    </script>    
   </body>
 </html>
