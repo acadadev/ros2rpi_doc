@@ -40,7 +40,7 @@ Qwiic cables are a popular choice for connecting various sensors and actuators t
 
 <div class="checkpoint">
   <p>✅&nbsp;<strong>Checkpoint</strong></p>
-  <p>In order to send I2C commands from your host with Python, you need to install the `python3-smbus2` library and ensure you're in the `i2c` group</p>
+  <p>In order to send I2C commands from your host with Python, you need to install the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> library and ensure you're in the <code class="language-plaintext highlighter-rouge">i2c</code> group</p>
   <div class="highlight notranslate position-relative">
     <div class="highlight">
       <pre id="command-checkpoint-ros-install"><span></span>sudo apt install python3-smbus2</pre>
@@ -55,7 +55,7 @@ Qwiic cables are a popular choice for connecting various sensors and actuators t
     </clipboard-copy>
   </div>
   <p>This command should output at least two ROS topics <code class="language-plaintext highlighter-rouge">/rosout</code> and <code class="language-plaintext highlighter-rouge">/parameter_events</code>.</p>
-  <p>Ignoring a failed checkpoint can result in the propagation of underlying defects, leading to more severe and difficult-to-resolve software issues in subsequent development stages.</p>
+
 </div>
 
 #### Prerequisites
@@ -323,3 +323,4 @@ ROS2RPI mounted a top RPI5, as seen in the picture all the ports including displ
 
 - Video of haton-hatoff by driver.
 - Explanation of parameter 0x33 in rosrider, how to instrument, 0x00 to cancel feature
+- Put newest photo
