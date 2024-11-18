@@ -74,8 +74,11 @@ Qwiic cables are a popular choice for connecting various sensors and actuators t
 </div>
 
 <div class="checkpoint">
-  <p>✅&nbsp;<strong>Checkpoint</strong></p>
-  <p>To ensure you’re in the <code class="language-plaintext highlighter-rouge">i2c</code> group, check the <code class="language-plaintext highlighter-rouge">/etc/group</code> file or run the following command:</p>
+    <p>✅&nbsp;<strong>Checkpoint</strong></p>
+    <p>
+        To ensure you’re in the <code class="language-plaintext highlighter-rouge">i2c</code> group,
+        check the <code class="language-plaintext highlighter-rouge">/etc/group</code> file or run the following command:
+    </p>
     <div class="highlight notranslate position-relative">
         <div class="highlight">
             <pre id="command-groups"><span></span>groups</pre>
