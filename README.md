@@ -41,7 +41,7 @@ Qwiic cables are a popular choice for connecting various sensors and actuators t
 #### Installing Software
 
 <div class="checkpoint">
-  <p>✅&nbsp;<strong>Prerequisites</strong></p>
+  <p>⚠️&nbsp;<strong>Prerequisites</strong></p>
   <p>In order to send I2C commands from your host with Python, you need to install the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> library.</p>
   <p>For Ubuntu:</p>
   <div class="highlight notranslate position-relative">
@@ -60,7 +60,7 @@ Qwiic cables are a popular choice for connecting various sensors and actuators t
   <div class="highlight notranslate position-relative">
     <p>If your Ubuntu version does not have the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> package, use pip3 to install package locally:</p>    
     <div class="highlight">
-      <pre id="command-checkpoint-pip-smbus2"><span></span>sudo apt install python3-smbus2</pre>
+      <pre id="command-checkpoint-pip-smbus2"><span></span>pip3 install smbus2</pre>
     </div> 
     <clipboard-copy style="position:absolute; right:8px; top:8px;" for="command-checkpoint-pip-smbus2">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
