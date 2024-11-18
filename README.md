@@ -81,7 +81,6 @@ import sys
 import time
 
 from smbus2 import SMBus
-import pigpio
 
 with SMBus(1) as bus:
 
@@ -115,7 +114,6 @@ import sys
 import time
 
 from smbus2 import SMBus
-import pigpio
 
 with SMBus(1) as bus:
 
@@ -300,3 +298,8 @@ ROS2RPI mounted a top RPI5, as seen in the picture all the ports including displ
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
    <img src="images/ros2rpi.png" alt="ROS2RPI mounted a top RPI5" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
+
+***TODO***
+
+- Video of haton-hatoff by driver.
+- Explanation of parameter 0x33 in rosrider, how to instrument, 0x00 to cancel feature
