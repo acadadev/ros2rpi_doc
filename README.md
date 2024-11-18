@@ -13,20 +13,6 @@ The ***ROS2RPI HAT*** is a powerful add-on board designed specifically for Raspb
    <img src="images/ros2rpi_top.jpg" alt="ROS2RPI Hat" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-#### Controlling ROS2RPI
-
-Sending one byte to I2C address `0x20` we can control all the peripherals on the device.
-
-| bit | function | mask | description |
-| ----- | ----- | ----- | ----- |
-| 0 | PSEL_3V3_A | 0x01 | Powers on I2C Bus Voltage-Level Translator A |
-| 1 | PSEL_3V3_B | 0x02 | Powers on I2C Bus Voltage-Level Translator B |
-| 2 | SERIAL_RX_ON | 0x04 | Connects the RPIs RX to debug port RX |
-| 3 | SERIAL_TX_ON | 0x08 | Connects the RPIs TX to debug port TX |
-| 4 | PSEL_LIDAR | 0x10 | LIDAR Power ON |
-| 5 | LIDAR_TX_ON | 0x20 | Connects the RPIs RX to Lidars TX |
-| 6 | LIDAR_PWM_ON | 0x40 | Connects RPIs GPIO19 to Lidars PWM input |
-
 #### ROS2RPI connected to ROSRider with QWIC Cable
 
 The image depicts the physical connection between the ROS2RPi HAT and ROSRider cards using a standard QWIC cable. The ROSRider card's additional QWIC port facilitates cascading configurations, enabling the expansion of the system with multiple ROSRider units or other compatible QWIC devices.
@@ -38,7 +24,7 @@ The image depicts the physical connection between the ROS2RPi HAT and ROSRider c
 
 Qwiic cables are a popular choice for connecting various sensors and actuators to microcontrollers and other devices. They feature a 4-wire JST-SH connector on each end. One unique aspect of Qwiic cables is their asymmetrical orientation. One connector will typically be `top-facing` while the other is `bottom-facing.` This deliberate design choice helps with cable routing and prevents accidental misconnections, making it easier to create clean and organized setups.
 
-#### Installing Software
+#### Controlling ROS2RPI
 
 <div class="checkpoint">
   <p>⚠️&nbsp;<strong>Prerequisites</strong></p>
@@ -72,6 +58,19 @@ Qwiic cables are a popular choice for connecting various sensors and actuators t
     </clipboard-copy>
   </div>
 </div>
+
+Sending one byte to I2C address `0x20` we can control all the peripherals on the device.
+
+| bit | function | mask | description |
+| ----- | ----- | ----- | ----- |
+| 0 | PSEL_3V3_A | 0x01 | Powers on I2C Bus Voltage-Level Translator A |
+| 1 | PSEL_3V3_B | 0x02 | Powers on I2C Bus Voltage-Level Translator B |
+| 2 | SERIAL_RX_ON | 0x04 | Connects the RPIs RX to debug port RX |
+| 3 | SERIAL_TX_ON | 0x08 | Connects the RPIs TX to debug port TX |
+| 4 | PSEL_LIDAR | 0x10 | LIDAR Power ON |
+| 5 | LIDAR_TX_ON | 0x20 | Connects the RPIs RX to Lidars TX |
+| 6 | LIDAR_PWM_ON | 0x40 | Connects RPIs GPIO19 to Lidars PWM input |
+
 <div class="checkpoint">
     <p>✅&nbsp;<strong>Checkpoint</strong></p>
     <p>
