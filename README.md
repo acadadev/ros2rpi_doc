@@ -297,8 +297,8 @@ Enable haton service by:
 
 If successful, you should see output similar to:
 
-<pre class="terminal">
-    <span class="shell">
+<pre class="term-out">
+    <span class="shell-out">
         Created symlink /etc/systemd/system/multi-user.target.wants/haton.service → /usr/lib/systemd/system/haton.service.
     </span>
 </pre>
@@ -358,8 +358,8 @@ Enable hatoff service by:
 
 If successful, you should see output similar to:
 
-<pre class="term_out">
-    <span class="shell_out">
+<pre class="term-out">
+    <span class="shell-out">
         Created symlink /etc/systemd/system/multi-user.target.wants/hatoff.service → /usr/lib/systemd/system/hatoff.service.
     </span>
 </pre>
