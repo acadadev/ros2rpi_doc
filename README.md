@@ -283,10 +283,6 @@ WantedBy=multi-user.target
 
 Enable haton service by:
 
-```bash
-
-```
-
 <div class="highlight notranslate position-relative">
 <div class="highlight">
   <pre id="command-haton-enable"><span></span>sudo systemctl enable haton</pre>
