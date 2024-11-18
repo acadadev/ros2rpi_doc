@@ -92,13 +92,7 @@ Qwiic cables are a popular choice for connecting various sensors and actuators t
             </svg>
         </clipboard-copy>
     </div>
-    <p>If you're not listed, you'll need to add yourself to the group using the following command:<p>
-    <div class="highlight notranslate position-relative">
-        <div class="highlight">
-          <pre id="command-usermod"><span></span>sudo usermod -aG i2c $USER</pre>
-        </div>
-    </div>
-    <p>Remember to log out and log back in for the group membership change to take effect.</p>    
+    <p>If you're not listed, you'll need to add yourself to the group using the following command:<p>  
 </div>
 
 #### Example Python program to turn on both I2C Ports and Lidar
