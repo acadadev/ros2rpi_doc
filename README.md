@@ -297,11 +297,9 @@ Enable haton service by:
 
 If successful, you should see output similar to:
 
-<pre class="term-out">
-    <span class="shell-out">
-        Created symlink /etc/systemd/system/multi-user.target.wants/haton.service → /usr/lib/systemd/system/haton.service.
-    </span>
-</pre>
+```console
+Created symlink /etc/systemd/system/multi-user.target.wants/haton.service → /usr/lib/systemd/system/haton.service.
+```
 
 The system will execute `haton.py` at boottime.
 
@@ -358,11 +356,9 @@ Enable hatoff service by:
 
 If successful, you should see output similar to:
 
-<pre class="term-out">
-    <span class="shell-out">
-        Created symlink /etc/systemd/system/multi-user.target.wants/hatoff.service → /usr/lib/systemd/system/hatoff.service.
-    </span>
-</pre>
+```console
+Created symlink /etc/systemd/system/multi-user.target.wants/hatoff.service → /usr/lib/systemd/system/hatoff.service.
+```
 
 The system will execute `hatoff.py` at shutdown.
 
