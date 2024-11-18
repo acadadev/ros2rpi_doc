@@ -38,6 +38,26 @@ The image depicts the physical connection between the ROS2RPi HAT and ROSRider c
 
 Qwiic cables are a popular choice for connecting various sensors and actuators to microcontrollers and other devices. They feature a 4-wire JST-SH connector on each end. One unique aspect of Qwiic cables is their asymmetrical orientation. One connector will typically be `top-facing` while the other is `bottom-facing.` This deliberate design choice helps with cable routing and prevents accidental misconnections, making it easier to create clean and organized setups.
 
+<div class="checkpoint">
+  <p>✅&nbsp;<strong>Checkpoint</strong></p>
+  <p>In order to send I2C commands from your host with Python, you need to install the `python3-smbus2` library and ensure you're in the `i2c` group</p>
+  <div class="highlight notranslate position-relative">
+    <div class="highlight">
+      <pre id="command-checkpoint-ros-install"><span></span>sudo apt install python3-smbus2</pre>
+    </div>
+    <clipboard-copy style="position:absolute; right:8px; top:8px;" for="command-checkpoint-ros-install">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+      <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+      </svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+      <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+      </svg>
+    </clipboard-copy>
+  </div>
+  <p>This command should output at least two ROS topics <code class="language-plaintext highlighter-rouge">/rosout</code> and <code class="language-plaintext highlighter-rouge">/parameter_events</code>.</p>
+  <p>Ignoring a failed checkpoint can result in the propagation of underlying defects, leading to more severe and difficult-to-resolve software issues in subsequent development stages.</p>
+</div>
+
 #### Prerequisites
 
 In order to send I2C commands from your host with Python, you need to install the `python3-smbus2` library and ensure you're in the
