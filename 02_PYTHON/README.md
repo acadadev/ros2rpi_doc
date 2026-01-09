@@ -111,3 +111,5 @@ with SMBus(1) as bus:
    except IOError as e:
        print('IOError: %s' % e)
 ```
+
+__Next Chapter:__ [C Code Samples](../03_C/README.md)

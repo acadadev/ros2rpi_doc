@@ -21,4 +21,4 @@ ROS2RPI mounted a top RPI5, as seen in the picture all the ports including displ
   </figure>
 </div>
 
-__Next Chapter:__ [Troubleshooting](10_DEBUG/README.md)
+__Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)

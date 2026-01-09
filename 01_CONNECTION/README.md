@@ -66,4 +66,4 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
     </div>
 </div>
 
-__Next Chapter:__ [Python Code Samples](02_PYTHON/README.md)
+__Next Chapter:__ [Python Code Samples](../02_PYTHON/README.md)
