@@ -10,7 +10,7 @@
 - title: C Code
   url: /ros2rpi_doc/03_C/
 
-- title: Linux System
+- title: Linux Systemd
   url: /ros2rpi_doc/04_SYSTEM/
 
 - title: Compatibility
