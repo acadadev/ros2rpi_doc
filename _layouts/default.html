@@ -30,10 +30,8 @@
             <ul style="list-style: none; padding: 0; margin: 0;">
                 {% for item in site.data.navigation %}
                   <li style="margin-bottom: 8px;">
-                      <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">
-                          {{ item.title }} - {{ page.url }} -- {{ item.url }}
-
-                          {{ item }}
+                      <a class="nav-link {% if item.active %}active{% endif %}" href="{{ item.url }}">
+                          {{ item.title }}
                       </a>
                   </li>
                 {% endfor %}
