@@ -1,13 +1,13 @@
 ---
 layout: default
 title_url: /02_PYTHON/README.html
-title: "Python Code"
+title: "Python Code Examples"
 description: "Example Python Code to Control ROS2RPI"
 ---
 
 <div class="sl">
     <div class="sl1">
-        > Python Examples
+        > Python Code Examples
     </div>
 </div>
 

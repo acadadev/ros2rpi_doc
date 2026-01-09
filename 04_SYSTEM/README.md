@@ -2,12 +2,12 @@
 layout: default
 title_url: /04_SYSTEM/README.html
 title: "Systemd"
-description: "Instrumenting Linux for HATON and HATOFF"
+description: "Instrumenting Linux Systemd"
 ---
 
 <div class="sl">
     <div class="sl1">
-        > Systemd
+        > Instrumenting Linux Systemd
     </div>
 </div>
 

@@ -4,10 +4,10 @@
 - title: Connection
   url: /ros2rpi_doc/01_CONNECTION/
 
-- title: Python Code
+- title: Python Code Examples
   url: /ros2rpi_doc/02_PYTHON/
 
-- title: C Code
+- title: C Code Examples
   url: /ros2rpi_doc/03_C/
 
 - title: Linux Systemd

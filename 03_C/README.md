@@ -1,13 +1,13 @@
 ---
 layout: default
 title_url: /03_C/README.html
-title: "C Code"
+title: "C Code Examples"
 description: "Example C Code to Control ROS2RPI"
 ---
 
 <div class="sl">
     <div class="sl1">
-        > C Examples
+        > C Examples Examples
     </div>
 </div>
 
