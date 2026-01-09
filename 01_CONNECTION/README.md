@@ -5,6 +5,18 @@ title: "Connection"
 description: "Connecting to ROSRider"
 ---
 
+<div class="ck">
+    <div class="ck1">
+        ⚠️&nbsp;Checkpoint:&nbsp;Prerequisites
+    </div>
+    <div class="ck2">
+        In order to send I2C commands from your host with Python, you need to install the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> library.
+        For Ubuntu: <code class="language-plaintext highlighter-rouge">sudo apt install python3-smbus2</code>
+        If your Linux distribution does not have the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> package, use pip3 to install package locally:
+        <code class="language-plaintext highlighter-rouge">pip3 install smbus2</code>
+    </div>
+</div>
+
 <div class="sl">
     <div class="sl1">
         > ROS2RPI connected with QWIC Cable
@@ -27,18 +39,6 @@ QWIIC cables are a popular choice for connecting various sensors and actuators t
 <div class="sl">
     <div class="sl1">
         > Controlling ROS2RPI
-    </div>
-</div>
-
-<div class="ck">
-    <div class="ck1">
-        ⚠️&nbsp;Checkpoint:&nbsp;Prerequisites
-    </div>
-    <div class="ck2">
-        In order to send I2C commands from your host with Python, you need to install the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> library.
-        For Ubuntu: <code class="language-plaintext highlighter-rouge">sudo apt install python3-smbus2</code>
-        If your Linux distribution does not have the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> package, use pip3 to install package locally:
-        <code class="language-plaintext highlighter-rouge">pip3 install smbus2</code>
     </div>
 </div>
 
