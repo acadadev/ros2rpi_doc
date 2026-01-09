@@ -9,13 +9,13 @@
 
 The ***ROS2RPI HAT*** enhances the capabilities of your Raspberry Pi by providing a range of features:
 
-| Feature                          |                                                                                                                                                                                                                                           |
-|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ***Dual Independent I2C Ports*** | Dual Bidirectional I2C Bus and Voltage-Level Translators, enabling flexible connectivity to a wide range of QWIC sensors                                                                                                                  |
-| ***I2C GPIO Expander***          | The ROS2RPI HAT utilizes an I2C GPIO expander to efficiently manage its functionalities, freeing up valuable Raspberry Pi GPIO pins for other applications                                                                                |
-| ***LIDAR Integration***          | A dedicated port for connecting Lidar sensors, directly interfaced with the Raspberry Pi's hardware serial port                                                                                                                           |
-| ***Active Cooling***             | A 30mm fan and metal heat sink at the bottom ensures optimal thermal performance, especially during intensive processing or sensor data acquisition.                                                                                      |
-| ***Serial Routing***             | offers a flexible serial port that can be configured for either LIDAR communication or external debugging. This dual-purpose functionality enables remote debugging and troubleshooting, enhancing the HAT's versatility and ease of use. | 
+| Feature                 |                                                                                                                                                                                                                                           |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ***Dual I2C Ports***    | Dual Bidirectional I2C Bus and Voltage-Level Translators, enabling flexible connectivity to a wide range of QWIC sensors                                                                                                                  |
+| ***I2C GPIO Expander*** | The ROS2RPI HAT utilizes an I2C GPIO expander to efficiently manage its functionalities, freeing up valuable Raspberry Pi GPIO pins for other applications                                                                                |
+| ***LIDAR Integration*** | A dedicated port for connecting Lidar sensors, directly interfaced with the Raspberry Pi's hardware serial port                                                                                                                           |
+| ***Active Cooling***    | A 30mm fan and metal heat sink at the bottom ensures optimal thermal performance, especially during intensive processing or sensor data acquisition.                                                                                      |
+| ***Serial Routing***    | offers a flexible serial port that can be configured for either LIDAR communication or external debugging. This dual-purpose functionality enables remote debugging and troubleshooting, enhancing the HAT's versatility and ease of use. | 
 
 <div class="img_dv">
   <figure class="img_fg50">
