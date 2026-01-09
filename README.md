@@ -12,8 +12,8 @@
 | ***Dual I2C Ports***    | I2C Bus and Voltage-Level Translators, enabling flexible connectivity to a wide range of QWIC sensors              |
 | ***I2C GPIO Expander*** | Utilizes an I2C GPIO expander to manage its functionalities, freeing up valuable  GPIO pins for other applications |
 | ***LIDAR Integration*** | A dedicated port for connecting LIDAR sensors, directly interfaced with the Raspberry Pi's hardware serial port    |
-| ***Active Cooling***    | A 30mm fan and metal heat sink at the bottom ensures optimal thermal performance.                                  |
-| ***Serial Routing***    | Flexible serial port that can be configured for either LIDAR communication or external debugging.                  | 
+| ***Active Cooling***    | A 30mm fan and metal heat sink at the bottom ensures optimal thermal performance                                   |
+| ***Serial Routing***    | Flexible serial port that can be configured for either LIDAR communication or external debugging                   | 
 
 <div class="img_dv">
   <figure class="img_fg50">
