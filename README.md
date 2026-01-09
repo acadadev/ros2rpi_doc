@@ -23,14 +23,6 @@ The ***ROS2RPI HAT*** is a powerful add-on board designed specifically for Raspb
 
 The ROSRiders driver leverages the I2C bus to communicate with the ROSRider card. By powering the I2C port on the ROS2RPi, a wake-up signal is generated, awakening the ROSRider card from a low-power state. This allows for efficient power management and quick activation when needed.
 
-#### ROS2RPI Compatibility
-
-ROS2RPI mounted a top RPI5, as seen in the picture all the ports including display ports can be reached.
-
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="images/ros2rpi.png" alt="ROS2RPI mounted a top RPI5" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-</div>
-
 ***TODO***
 
 - Video of haton-hatoff by driver.
