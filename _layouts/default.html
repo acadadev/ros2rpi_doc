@@ -31,7 +31,7 @@
                 {% for item in site.data.navigation %}
                   <li style="margin-bottom: 8px;">
                       <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">
-                          {{ item.title }}
+                          {{ item.title }} - {{ page.url }} -- {{ item.url }}
                       </a>
                   </li>
                 {% endfor %}
