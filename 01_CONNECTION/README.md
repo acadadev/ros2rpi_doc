@@ -7,18 +7,6 @@ description: "Connecting to ROSRider"
 
 <div class="ck">
     <div class="ck1">
-        ⚠️&nbsp;Checkpoint:&nbsp;Prerequisites
-    </div>
-    <div class="ck2">
-        In order to send I2C commands from your host with Python, you need to install the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> library.
-        For Ubuntu: <code class="language-plaintext highlighter-rouge">sudo apt install python3-smbus2</code>
-        If your Linux distribution does not have the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> package, use pip3 to install package locally:
-        <code class="language-plaintext highlighter-rouge">pip3 install smbus2</code>
-    </div>
-</div>
-
-<div class="ck">
-    <div class="ck1">
         ⚠️&nbsp;Checkpoint:&nbsp;Permissions
     </div>
     <div class="ck2">
@@ -28,6 +16,18 @@ description: "Connecting to ROSRider"
         If you're not listed, you'll need to add yourself to the group using the following command:
         <code class="language-plaintext highlighter-rouge">sudo usermod -aG i2c $USER</code>
         Remember to log out and log back in for the group membership change to take effect.
+    </div>
+</div>
+
+<div class="ck">
+    <div class="ck1">
+        ⚠️&nbsp;Checkpoint:&nbsp;Prerequisites
+    </div>
+    <div class="ck2">
+        In order to send I2C commands from your host with Python, you need to install the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> library.
+        For Ubuntu: <code class="language-plaintext highlighter-rouge">sudo apt install python3-smbus2</code>
+        If your Linux distribution does not have the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> package, use pip3 to install package locally:
+        <code class="language-plaintext highlighter-rouge">pip3 install smbus2</code>
     </div>
 </div>
 
