@@ -1,4 +1,11 @@
-#### Overview
+<div class="sl">
+    <div class="sl1">
+        > ROS2RPI HAT
+    </div>
+    <div class="sl2">
+        "Seamlessly integrate LIDAR, dual I2C sensors, and displays with professional-grade active cooling for Raspberry Pi 4 & 5."
+    </div>
+</div>
 
 The ***ROS2RPI HAT*** is a powerful add-on board designed specifically for Raspberry Pi 4/5 models. It enhances the capabilities of your Raspberry Pi by providing a range of features, including:
 
