@@ -50,12 +50,8 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
         To ensure you’re in the <code class="language-plaintext highlighter-rouge">i2c</code> group,
         check the <code class="language-plaintext highlighter-rouge">/etc/group</code> file or run the following command:
         <code class="language-plaintext highlighter-rouge">groups</code>
-    </div>
-    <div class="ck2">
         If you're not listed, you'll need to add yourself to the group using the following command:
         <code class="language-plaintext highlighter-rouge">sudo usermod -aG i2c $USER</code>
-    </div>
-    <div class="ck2">
         Remember to log out and log back in for the group membership change to take effect.
     </div>
 </div>
