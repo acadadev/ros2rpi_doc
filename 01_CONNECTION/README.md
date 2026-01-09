@@ -5,6 +5,12 @@ title: "Connection"
 description: "Connecting to ROSRider"
 ---
 
+<div class="sl">
+    <div class="sl1">
+        > Connection
+    </div>
+</div>
+
 __ROS2RPI connected with QWIC Cable__
 
 The image depicts the physical connection between the ROS2RPi HAT and ROSRider cards using a standard QWIC cable. The ROSRider card's additional QWIC port facilitates cascading configurations, enabling the expansion of the system with multiple ROSRider units or other compatible QWIC devices.

@@ -5,4 +5,8 @@ title: "Troubleshooting"
 description: "Error Conditions on the ROS2RPI Card"
 ---
 
-__Troubleshooting__
+<div class="sl">
+    <div class="sl1">
+        > Troubleshooting
+    </div>
+</div>

@@ -5,6 +5,12 @@ title: "Python Code"
 description: "Example Python Code to Control ROS2RPI"
 ---
 
+<div class="sl">
+    <div class="sl1">
+        > Python Examples
+    </div>
+</div>
+
 __Example Python program to turn on both I2C Ports and Lidar__
 
 Create a file named `haton.py` under `$HOME\bin` and put the code below inside it
