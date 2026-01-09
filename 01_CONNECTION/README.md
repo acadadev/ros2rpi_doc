@@ -9,12 +9,16 @@ description: "Connecting to ROSRider"
 
 The image depicts the physical connection between the ROS2RPi HAT and ROSRider cards using a standard QWIC cable. The ROSRider card's additional QWIC port facilitates cascading configurations, enabling the expansion of the system with multiple ROSRider units or other compatible QWIC devices.
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="../images/rosrider_ros2rpi_qwic.png" alt="Connected to ROSRider with QWIC Cable" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-   <img src="../images/qwic_connectors.jpg" alt="Various QWIC Cables" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+<div class="img_dv_center">
+  <figure class="img_fg45">
+    <img class="img_sh" src="../images/rosrider_ros2rpi_qwic.png" alt="Connected to ROSRider with QWIC Cable" style="width: 100%;">
+  </figure>
+  <figure class="img_fg45">
+    <img class="img_sh" src="../images/qwic_connectors.jpg" alt="Various QWIC Cables" style="width: 100%;">
+  </figure>
 </div>
 
-Qwiic cables are a popular choice for connecting various sensors and actuators to microcontrollers and other devices. They feature a 4-wire JST-SH connector on each end. One unique aspect of Qwiic cables is their asymmetrical orientation. One connector will typically be `top-facing` while the other is `bottom-facing.` This deliberate design choice helps with cable routing and prevents accidental misconnections, making it easier to create clean and organized setups.
+QWIIC cables are a popular choice for connecting various sensors and actuators to microcontrollers and other devices. They feature a 4-wire JST-SH connector on each end. One unique aspect of Qwiic cables is their asymmetrical orientation. One connector will typically be `top-facing` while the other is `bottom-facing.` This deliberate design choice helps with cable routing and prevents accidental misconnections, making it easier to create clean and organized setups.
 
 #### Controlling ROS2RPI
 
