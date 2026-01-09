@@ -1,0 +1,26 @@
+- title: Introduction
+  url: /rosrider_doc/
+
+- title: Specifications
+  url: /rosrider_doc/01_SPECS/
+
+- title: Pinmap
+  url: /rosrider_doc/02_PINMAP/
+
+- title: ROS2 Drivers
+  url: /rosrider_doc/04_DRIVERS/
+
+- title: Parameters
+  url: /rosrider_doc/05_PARAMETERS/
+
+- title: Firmware
+  url: /rosrider_doc/06_FIRMWARE/
+
+- title: Controller Diagram
+  url: /rosrider_doc/07_DIAGRAM/
+
+- title: Procedures
+  url: /rosrider_doc/08_PROCEDURES/
+
+- title: Troubleshooting
+  url: /rosrider_doc/10_DEBUG/

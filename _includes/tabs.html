@@ -1,0 +1,41 @@
+<div class="tab-container">
+  <div class="tab-header">
+    <button class="tab-btn active" onclick="openTab(event, 'tab1')">{{ include.tab1_title }}</button>
+    <button class="tab-btn" onclick="openTab(event, 'tab2')">{{ include.tab2_title }}</button>
+    {% if include.tab3_title %}<button class="tab-btn" onclick="openTab(event, 'tab3')">{{ include.tab3_title }}</button>{% endif %}
+    {% if include.tab4_title %}<button class="tab-btn" onclick="openTab(event, 'tab4')">{{ include.tab4_title }}</button>{% endif %}
+    {% if include.tab5_title %}<button class="tab-btn" onclick="openTab(event, 'tab5')">{{ include.tab5_title }}</button>{% endif %}
+    {% if include.tab6_title %}<button class="tab-btn" onclick="openTab(event, 'tab6')">{{ include.tab6_title }}</button>{% endif %}
+    {% if include.tab7_title %}<button class="tab-btn" onclick="openTab(event, 'tab7')">{{ include.tab7_title }}</button>{% endif %}
+    {% if include.tab8_title %}<button class="tab-btn" onclick="openTab(event, 'tab8')">{{ include.tab8_title }}</button>{% endif %}
+    {% if include.tab9_title %}<button class="tab-btn" onclick="openTab(event, 'tab9')">{{ include.tab9_title }}</button>{% endif %}
+    {% if include.tab10_title %}<button class="tab-btn" onclick="openTab(event, 'tab10')">{{ include.tab10_title }}</button>{% endif %}
+    {% if include.tab11_title %}<button class="tab-btn" onclick="openTab(event, 'tab11')">{{ include.tab11_title }}</button>{% endif %}
+    {% if include.tab12_title %}<button class="tab-btn" onclick="openTab(event, 'tab12')">{{ include.tab12_title }}</button>{% endif %}
+    {% if include.tab13_title %}<button class="tab-btn" onclick="openTab(event, 'tab13')">{{ include.tab13_title }}</button>{% endif %}
+    {% if include.tab14_title %}<button class="tab-btn" onclick="openTab(event, 'tab14')">{{ include.tab14_title }}</button>{% endif %}
+    {% if include.tab15_title %}<button class="tab-btn" onclick="openTab(event, 'tab15')">{{ include.tab15_title }}</button>{% endif %}
+    {% if include.tab16_title %}<button class="tab-btn" onclick="openTab(event, 'tab16')">{{ include.tab16_title }}</button>{% endif %}
+  </div>
+
+  <div class="tab-content" data-tab-id="tab1" style="display: block;">
+    {{ include.tab1_content | markdownify }}
+  </div>
+  <div class="tab-content" data-tab-id="tab2">
+    {{ include.tab2_content | markdownify }}
+  </div>
+  {% if include.tab3_title %}<div class="tab-content" data-tab-id="tab3">{{ include.tab3_content | markdownify }}</div>{% endif %}
+  {% if include.tab4_title %}<div class="tab-content" data-tab-id="tab4">{{ include.tab4_content | markdownify }}</div>{% endif %}
+  {% if include.tab5_title %}<div class="tab-content" data-tab-id="tab5">{{ include.tab5_content | markdownify }}</div>{% endif %}
+  {% if include.tab6_title %}<div class="tab-content" data-tab-id="tab6">{{ include.tab6_content | markdownify }}</div>{% endif %}
+  {% if include.tab7_title %}<div class="tab-content" data-tab-id="tab7">{{ include.tab7_content | markdownify }}</div>{% endif %}
+  {% if include.tab8_title %}<div class="tab-content" data-tab-id="tab8">{{ include.tab8_content | markdownify }}</div>{% endif %}
+  {% if include.tab9_title %}<div class="tab-content" data-tab-id="tab9">{{ include.tab9_content | markdownify }}</div>{% endif %}
+  {% if include.tab10_title %}<div class="tab-content" data-tab-id="tab10">{{ include.tab10_content | markdownify }}</div>{% endif %}
+  {% if include.tab11_title %}<div class="tab-content" data-tab-id="tab11">{{ include.tab11_content | markdownify }}</div>{% endif %}
+  {% if include.tab12_title %}<div class="tab-content" data-tab-id="tab12">{{ include.tab12_content | markdownify }}</div>{% endif %}
+  {% if include.tab13_title %}<div class="tab-content" data-tab-id="tab13">{{ include.tab13_content | markdownify }}</div>{% endif %}
+  {% if include.tab14_title %}<div class="tab-content" data-tab-id="tab14">{{ include.tab14_content | markdownify }}</div>{% endif %}
+  {% if include.tab15_title %}<div class="tab-content" data-tab-id="tab15">{{ include.tab15_content | markdownify }}</div>{% endif %}
+  {% if include.tab16_title %}<div class="tab-content" data-tab-id="tab16">{{ include.tab16_content | markdownify }}</div>{% endif %}
+</div>

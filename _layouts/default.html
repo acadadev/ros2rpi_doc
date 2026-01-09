@@ -18,25 +18,46 @@
     <meta property="og:image" content="https://repository-images.githubusercontent.com/819133700/b298fc02-8de1-4335-98ec-512975d0fc26" />
   </head>
   <body>
-    <div class="container-lg px-3">
-      <div class="pt-3">
-        <a href="https://acada.dev"><img src="/images/logo.svg" alt="acada robotics" /></a>
-      </div>
-      <div class="pt-2 pb-2">
-         <h4>
-           <a href="https://acada.dev">ACADA Robotics</a> • 
-           <a href="https://docs.acada.dev">Documentation</a> • 
-           <a href="https://docs.acada.dev/ros2rpi_doc">ROS2RPI Hat</a> 
-           {% if page.section_title %} • <a href="https://docs.acada.dev/ros2rpi_doc{{ page.section_url }}">{{ page.section_title }}</a>{% endif %} 
-           {% if page.title %} • <a href="https://docs.acada.dev/ros2rpi_doc{{ page.title_url }}">{{ page.title }}</a>{% endif %}          
-         </h4>
-      </div>      
-    </div>
-    <div class="container-lg px-3 markdown-body">
-      <hr>
-      {{ content }}
-      <hr>
-      Copyright © 2024, ACADA Robotics • <a href="https://acada.dev">https://acada.dev</a>
+    <div class="layout-wrapper">
+      <nav class="sidebar">
+        <div class="sidebar-header">
+          <a href="https://docs.acada.dev">
+              <img src="/images/logo.svg" alt="Acada Robotics Documentation" style="width: 140px; display: block;">
+          </a>
+        </div>
+        <div class="sidebar-menu">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                {% for item in site.data.navigation %}
+
+                  {% assign link_href = item.url %}
+                  {% unless item.url == '/rosrider_doc/' %}
+                     {% assign link_href = item.url | append: 'README.html' %}
+                  {% endunless %}
+                  {% assign current_clean = page.url | replace: 'index.html', '' | replace: 'README.html', '' %}
+                  {% assign item_clean = item.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
+
+                  <li style="margin-bottom: 8px;">
+                      <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
+                          {{ item.title }}
+                      </a>
+                  </li>
+                {% endfor %}
+            </ul>
+        </div>
+      </nav>
+      <main class="main-content markdown-body">
+          <div class="content-breadcrumbs">
+             <h4>
+               <a href="https://acada.dev">ACADA Robotics</a> •
+               <a href="https://docs.acada.dev">Documentation</a> •
+               <span class="breadcrumb-active">ROS2RPI</span>
+             </h4>
+          </div>
+          {{ content }}
+          <p style="border-top: 1px solid #EEE; margin-top:20px; padding-top: 10px; margin-bottom: 20px; font-size: 0.9em; color: #666;">
+              Copyright © 2026, ACADA Robotics • <a href="https://acada.dev">https://acada.dev</a>
+          </p>
+      </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
