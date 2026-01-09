@@ -28,16 +28,8 @@
         <div class="sidebar-menu">
             <ul style="list-style: none; padding: 0; margin: 0;">
                 {% for item in site.data.navigation %}
-
-                  {% assign link_href = item.url %}
-                  {% unless item.url == '/rosrider_doc/' %}
-                     {% assign link_href = item.url | append: 'README.html' %}
-                  {% endunless %}
-                  {% assign current_clean = page.url | replace: 'index.html', '' | replace: 'README.html', '' %}
-                  {% assign item_clean = item.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
-
                   <li style="margin-bottom: 8px;">
-                      <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
+                      <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">
                           {{ item.title }}
                       </a>
                   </li>
