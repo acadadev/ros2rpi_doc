@@ -31,12 +31,6 @@ description: "Connecting to ROSRider"
     </div>
 </div>
 
-<div class="sl">
-    <div class="sl1">
-        > ROS2RPI connected with QWIC Cable
-    </div>
-</div>
-
 The image depicts the physical connection between the ROS2RPi HAT and ROSRider cards using a standard QWIC cable. The ROSRider card's additional QWIC port facilitates cascading configurations, enabling the expansion of the system with multiple ROSRider units or other compatible QWIC devices.
 
 <div class="img_dv_center">
@@ -67,5 +61,18 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
 | 4   | PSEL_LIDAR   | 0x10 | LIDAR Power ON                               |
 | 5   | LIDAR_TX_ON  | 0x20 | Connects the RPIs RX to Lidars TX            |
 | 6   | LIDAR_PWM_ON | 0x40 | Connects RPIs GPIO19 to Lidars PWM input     |
+
+
+__ROS2RPI_CONFIG__
+
+When operating the ROSRider card in conjunction with the ROS2RPI card on a Raspberry Pi platform, the driver provides the capability to transmit commands to the ROS2RPI card.
+This functionality is particularly valuable for controlling peripheral devices, such as lidar units, during the driver initialization sequence.
+If the ROSRider card is deployed independently (standalone configuration), set this parameter to 0.
+
+| Hat Command | Description                                   |
+|-------------|-----------------------------------------------|
+| 0x00        | No Command                                    |
+| 0x0F        | ROSRider ON, Serial Routed to DEBUG           |
+| 0x33        | ROSRider ON, LIDAR ON, Serial Routed to LIDAR |
 
 __Next Chapter:__ [Python Code Samples](../02_PYTHON/README.md)
