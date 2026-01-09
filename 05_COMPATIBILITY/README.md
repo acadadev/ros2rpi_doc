@@ -16,7 +16,7 @@ __RPI4 and RPI5__
 ROS2RPI mounted a top RPI5, as seen in the picture all the ports including display ports can be reached.
 
 <div class="img_dv">
-  <figure class="img_fg45">
+  <figure class="img_fg60">
     <img class="img_sh" src="../images/ros2rpi.png" alt="ROS2RPI mounted a top RPI5" style="width: 100%;">
   </figure>
 </div>
