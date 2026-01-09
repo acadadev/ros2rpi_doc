@@ -65,9 +65,3 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
         Remember to log out and log back in for the group membership change to take effect.
     </div>
 </div>
-
-__Understanding Hibernation__
-
-The ROSRiders driver leverages the I2C bus to communicate with the ROSRider card.
-By powering the I2C port on the ROS2RPi, a wake-up signal is generated, awakening the ROSRider card from a low-power state.
-This allows for efficient power management and quick activation when needed.
