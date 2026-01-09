@@ -20,7 +20,4 @@ This allows for efficient power management and quick activation when needed.
 ***TODO***
 - Installation close up. maybe video.
 - Video of haton hatoff by driver.
-- Explanation of parameter 0x33 in rosrider, how to instrument, 0x00 to cancel feature
-
-__Return to the [Introduction](../README.md)__ 
 
