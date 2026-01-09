@@ -32,6 +32,8 @@
                   <li style="margin-bottom: 8px;">
                       <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">
                           {{ item.title }} - {{ page.url }} -- {{ item.url }}
+
+                          {{ item }}
                       </a>
                   </li>
                 {% endfor %}
