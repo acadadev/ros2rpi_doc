@@ -56,7 +56,11 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
 | 5   | LIDAR_TX_ON  | 0x20 | Connects the RPIs RX to Lidars TX            |
 | 6   | LIDAR_PWM_ON | 0x40 | Connects RPIs GPIO19 to Lidars PWM input     |
 
-__ROS2RPI_CONFIG__
+<div class="sl">
+    <div class="sl1">
+        > ROS2RPI_CONFIG
+    </div>
+</div>
 
 When operating the ROSRider card in conjunction with the ROS2RPI card on a Raspberry Pi platform, the driver provides the capability to transmit commands to the ROS2RPI card.
 This functionality is particularly valuable for controlling peripheral devices, such as lidar units, during the driver initialization sequence.
