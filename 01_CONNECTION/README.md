@@ -63,42 +63,26 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
 | 5 | LIDAR_TX_ON | 0x20 | Connects the RPIs RX to Lidars TX |
 | 6 | LIDAR_PWM_ON | 0x40 | Connects RPIs GPIO19 to Lidars PWM input |
 
-<div class="checkpoint">
-    <p>✅&nbsp;<strong>Checkpoint</strong></p>
-    <p>
+<div class="ck">
+    <div class="ck1">
+        ⚠️&nbsp;Checkpoint
+    </div>
+    <div class="ck2">
         To ensure you’re in the <code class="language-plaintext highlighter-rouge">i2c</code> group,
         check the <code class="language-plaintext highlighter-rouge">/etc/group</code> file or run the following command:
-    </p>
-    <div class="highlight notranslate position-relative">
-        <div class="highlight">
-            <pre id="command-groups"><span></span>groups</pre>
-        </div>
-        <clipboard-copy style="position:absolute; right:8px; top:8px;" for="command-groups">
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-            <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-            </svg>
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-            <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-            </svg>
-        </clipboard-copy>
+        <code class="language-plaintext highlighter-rouge">groups</code>
     </div>
-    <p>If you're not listed, you'll need to add yourself to the group using the following command:</p>
-    <div class="highlight notranslate position-relative">
-        <div class="highlight">
-          <pre id="command-usermod"><span></span>sudo usermod -aG i2c $USER</pre>
-        </div>
-        <clipboard-copy style="position:absolute; right:8px; top:8px;" for="command-usermod">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-          <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-          </svg>
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-          <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-          </svg>
-        </clipboard-copy>        
+    <div class="ck2">
+        If you're not listed, you'll need to add yourself to the group using the following command:
+        <code class="language-plaintext highlighter-rouge">sudo usermod -aG i2c $USER</code>
     </div>
-    <p>Remember to log out and log back in for the group membership change to take effect.</p>
+    <div class="ck2">
+        Remember to log out and log back in for the group membership change to take effect.
+    </div>
 </div>
 
 #### Understanding Hibernation
 
-The ROSRiders driver leverages the I2C bus to communicate with the ROSRider card. By powering the I2C port on the ROS2RPi, a wake-up signal is generated, awakening the ROSRider card from a low-power state. This allows for efficient power management and quick activation when needed.
+The ROSRiders driver leverages the I2C bus to communicate with the ROSRider card.
+By powering the I2C port on the ROS2RPi, a wake-up signal is generated, awakening the ROSRider card from a low-power state.
+This allows for efficient power management and quick activation when needed.
