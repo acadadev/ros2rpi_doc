@@ -29,8 +29,16 @@
         <div class="sidebar-menu">
             <ul style="list-style: none; padding: 0; margin: 0;">
                 {% for item in site.data.navigation %}
+
+                  {% assign link_href = item.url %}
+                  {% unless item.url == '/ros2rpi_doc/' %}
+                     {% assign link_href = item.url | append: 'README.html' %}
+                  {% endunless %}
+                  {% assign current_clean = page.url | replace: 'index.html', '' | replace: 'README.html', '' %}
+                  {% assign item_clean = item.url | replace: '/ros2rpi_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
+
                   <li style="margin-bottom: 8px;">
-                      <a class="nav-link {% if item.url == '/ros2rpi_doc/' %}active{% endif %}" href="{{ item.url }}">
+                      <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
                           {{ item.title }}
                       </a>
                   </li>

@@ -1,11 +1,20 @@
-- title: ROSRider
-  url: /rosrider_doc/
-
 - title: ROS2RPI
   url: /ros2rpi_doc/
 
-- title: FXIMU
-  url: /fximu_doc/
+- title: ROS2RPI
+  url: /ros2rpi_doc/01_CONNECTION/
 
-- title: ROS Course for Beginners
-  url: https://docs.acada.dev/ros_beginners_course/
+- title: Python Code
+  url: /ros2rpi_doc/02_PYTHON/
+
+- title: C Code
+  url: /ros2rpi_doc/03_C/
+
+- title: Linux System
+  url: /ros2rpi_doc/04_SYSTEM/
+
+- title: Compatibility
+  url: /ros2rpi_doc/05_COMPATIBILITY/
+
+- title: Troubleshooting
+  url: /ros2rpi_doc/10_DEBUG/
