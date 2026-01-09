@@ -17,6 +17,20 @@ description: "Connecting to ROSRider"
     </div>
 </div>
 
+<div class="ck">
+    <div class="ck1">
+        ⚠️&nbsp;Checkpoint:&nbsp;Permissions
+    </div>
+    <div class="ck2">
+        To ensure you’re in the <code class="language-plaintext highlighter-rouge">i2c</code> group,
+        check the <code class="language-plaintext highlighter-rouge">/etc/group</code> file or run the following command:
+        <code class="language-plaintext highlighter-rouge">groups</code>
+        If you're not listed, you'll need to add yourself to the group using the following command:
+        <code class="language-plaintext highlighter-rouge">sudo usermod -aG i2c $USER</code>
+        Remember to log out and log back in for the group membership change to take effect.
+    </div>
+</div>
+
 <div class="sl">
     <div class="sl1">
         > ROS2RPI connected with QWIC Cable
@@ -53,19 +67,5 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
 | 4   | PSEL_LIDAR   | 0x10 | LIDAR Power ON                               |
 | 5   | LIDAR_TX_ON  | 0x20 | Connects the RPIs RX to Lidars TX            |
 | 6   | LIDAR_PWM_ON | 0x40 | Connects RPIs GPIO19 to Lidars PWM input     |
-
-<div class="ck">
-    <div class="ck1">
-        ⚠️&nbsp;Checkpoint:&nbsp;Permissions
-    </div>
-    <div class="ck2">
-        To ensure you’re in the <code class="language-plaintext highlighter-rouge">i2c</code> group,
-        check the <code class="language-plaintext highlighter-rouge">/etc/group</code> file or run the following command:
-        <code class="language-plaintext highlighter-rouge">groups</code>
-        If you're not listed, you'll need to add yourself to the group using the following command:
-        <code class="language-plaintext highlighter-rouge">sudo usermod -aG i2c $USER</code>
-        Remember to log out and log back in for the group membership change to take effect.
-    </div>
-</div>
 
 __Next Chapter:__ [Python Code Samples](../02_PYTHON/README.md)
