@@ -1,15 +1,11 @@
 - title: ROSRider
   url: /rosrider_doc/
-  active: False
 
 - title: ROS2RPI
   url: /ros2rpi_doc/
-  active: True
 
 - title: FXIMU
   url: /fximu_doc/
-  active: False
 
 - title: ROS Course for Beginners
   url: https://docs.acada.dev/ros_beginners_course/
-  active: False
