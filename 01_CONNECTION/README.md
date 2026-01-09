@@ -17,7 +17,7 @@ The image depicts the physical connection between the ROS2RPi HAT and ROSRider c
 
 <div class="img_dv_center">
   <figure class="img_fgc45">
-    <img class="img_sh" src="../images/ros2rpi_qwic.png" alt="Connected to ROSRider with QWIC Cable" style="width: 100%;">
+    <img class="img_sh" src="../images/caretta_ros2rpi.png" alt="Connected to ROSRider with QWIC Cable" style="width: 100%;">
   </figure>
   <figure class="img_fgc45">
     <img class="img_sh" src="../images/qwic_cables.jpg" alt="Various QWIC Cables" style="width: 100%;">
