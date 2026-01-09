@@ -19,18 +19,6 @@ description: "Connecting to ROSRider"
     </div>
 </div>
 
-<div class="ck">
-    <div class="ck1">
-        ⚠️&nbsp;Checkpoint:&nbsp;Prerequisites
-    </div>
-    <div class="ck2">
-        In order to send I2C commands from your host with Python, you need to install the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> library.
-        For Ubuntu: <code class="language-plaintext highlighter-rouge">sudo apt install python3-smbus2</code>
-        If your Linux distribution does not have the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> package, use pip3 to install package locally:
-        <code class="language-plaintext highlighter-rouge">pip3 install smbus2</code>
-    </div>
-</div>
-
 The image depicts the physical connection between the ROS2RPi HAT and ROSRider cards using a standard QWIC cable. The ROSRider card's additional QWIC port facilitates cascading configurations, enabling the expansion of the system with multiple ROSRider units or other compatible QWIC devices.
 
 <div class="img_dv_center">
@@ -44,9 +32,15 @@ The image depicts the physical connection between the ROS2RPi HAT and ROSRider c
 
 QWIIC cables are a popular choice for connecting various sensors and actuators to microcontrollers and other devices. They feature a 4-wire JST-SH connector on each end. One unique aspect of Qwiic cables is their asymmetrical orientation. One connector will typically be `top-facing` while the other is `bottom-facing.` This deliberate design choice helps with cable routing and prevents accidental misconnections, making it easier to create clean and organized setups.
 
-<div class="sl">
-    <div class="sl1">
-        > Controlling ROS2RPI
+<div class="ck">
+    <div class="ck1">
+        ⚠️&nbsp;Checkpoint:&nbsp;Prerequisites
+    </div>
+    <div class="ck2">
+        In order to send I2C commands from your host with Python, you need to install the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> library.
+        For Ubuntu: <code class="language-plaintext highlighter-rouge">sudo apt install python3-smbus2</code>
+        If your Linux distribution does not have the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> package, use pip3 to install package locally:
+        <code class="language-plaintext highlighter-rouge">pip3 install smbus2</code>
     </div>
 </div>
 
