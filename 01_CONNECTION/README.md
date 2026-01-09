@@ -44,7 +44,7 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
 
 <div class="ck">
     <div class="ck1">
-        ⚠️&nbsp;Checkpoint
+        ⚠️&nbsp;Checkpoint:&nbsp;Permissions
     </div>
     <div class="ck2">
         To ensure you’re in the <code class="language-plaintext highlighter-rouge">i2c</code> group,
