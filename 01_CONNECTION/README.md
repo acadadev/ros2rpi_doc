@@ -24,11 +24,7 @@ Qwiic cables are a popular choice for connecting various sensors and actuators t
     </div>
     <div class="ck2">
         In order to send I2C commands from your host with Python, you need to install the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> library.
-    </div>
-    <div class="ck2">
         For Ubuntu: <code class="language-plaintext highlighter-rouge">sudo apt install python3-smbus2</code>
-    </div>
-    <div class="ck2">
         If your Linux distribution does not have the <code class="language-plaintext highlighter-rouge">python3-smbus2</code> package, use pip3 to install package locally:
         <code class="language-plaintext highlighter-rouge">pip3 install smbus2</code>
     </div>
