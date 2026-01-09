@@ -7,7 +7,7 @@ description: "Example C Code to Control ROS2RPI"
 
 <div class="sl">
     <div class="sl1">
-        > C Examples Examples
+        > C Code Examples
     </div>
 </div>
 
