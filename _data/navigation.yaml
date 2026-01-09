@@ -1,26 +1,11 @@
-- title: Introduction
+- title: ROSRider
   url: /rosrider_doc/
 
-- title: Specifications
-  url: /rosrider_doc/01_SPECS/
+- title: ROS2RPI
+  url: /ros2rpi_doc/
 
-- title: Pinmap
-  url: /rosrider_doc/02_PINMAP/
+- title: FXIMU
+  url: /fximu_doc/
 
-- title: ROS2 Drivers
-  url: /rosrider_doc/04_DRIVERS/
-
-- title: Parameters
-  url: /rosrider_doc/05_PARAMETERS/
-
-- title: Firmware
-  url: /rosrider_doc/06_FIRMWARE/
-
-- title: Controller Diagram
-  url: /rosrider_doc/07_DIAGRAM/
-
-- title: Procedures
-  url: /rosrider_doc/08_PROCEDURES/
-
-- title: Troubleshooting
-  url: /rosrider_doc/10_DEBUG/
+- title: ROS Course for Beginners
+  url: https://docs.acada.dev/ros_beginners_course/
