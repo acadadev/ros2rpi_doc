@@ -5,7 +5,7 @@ title: "Systemd"
 description: "Instrumenting Linux for HATON and HATOFF"
 ---
 
-#### Instrumenting Linux to HATON at boot time
+__Instrumenting Linux to HATON at boot time__
 
 Change directory to `/lib/systemd/system` and create `haton.service` file by typing the following commands:
 
@@ -64,7 +64,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/haton.service → /u
 
 The system will execute `haton.py` at boottime.
 
-#### Instrumenting Linux to HATOFF at shutdown
+__Instrumenting Linux to HATOFF at shutdown__
 
 Change directory to `/lib/systemd/system` and create `hatoff.service` file by typing the following commands:
 
@@ -123,6 +123,6 @@ Created symlink /etc/systemd/system/multi-user.target.wants/hatoff.service → /
 
 The system will execute `hatoff.py` at shutdown.
 
-**Important Node**
+***Important Note***
 
 While we can leverage Python scripts to manage peripheral control at boot and shutdown, the ROSRiders driver offers a software-based approach to dynamically activate and deactivate peripherals in response to ROS node lifecycle events.

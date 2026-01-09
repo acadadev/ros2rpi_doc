@@ -5,7 +5,7 @@ title: "C Code"
 description: "Example C Code to Control ROS2RPI"
 ---
 
-#### Example C function send ROS2RPI command
+__Example C function send ROS2RPI command__
 
 ```c
 uint8_t send_hat_command(int fd, uint8_t output) {
@@ -23,7 +23,7 @@ uint8_t send_hat_command(int fd, uint8_t output) {
 }
 ```
 
-#### Example C function to send System Control Commands to ROSRider
+__Example C function to send System Control Commands to ROSRider__
 
 ```c
 uint8_t send_sysctl(int fd, uint8_t command) {

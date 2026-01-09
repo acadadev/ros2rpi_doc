@@ -5,7 +5,7 @@ title: "Python Code"
 description: "Example Python Code to Control ROS2RPI"
 ---
 
-#### Example Python program to turn on both I2C Ports and Lidar
+__Example Python program to turn on both I2C Ports and Lidar__
 
 Create a file named `haton.py` under `$HOME\bin` and put the code below inside it
 
@@ -40,7 +40,7 @@ with SMBus(1) as bus:
 
 ```
 
-#### Example Python program to turn on both I2C Ports, and switch serial to DEBUG
+__Example Python program to turn on both I2C Ports, and switch serial to DEBUG__
 
 ```python
 #!/usr/bin/env python
@@ -72,7 +72,7 @@ with SMBus(1) as bus:
         print('IOError: %s' % e)
 ```
 
-#### Example Python program to set ROSRider to hibernate, and turn off all hat functionality
+__Example Python program to set ROSRider to hibernate, and turn off all hat functionality__
 
 Create a file named `hatoff.py` under `$HOME\bin` and put the code below inside it
 

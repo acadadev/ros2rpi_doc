@@ -5,7 +5,7 @@ title: "Compatibility"
 description: "ROS2RPI Compatibility with Raspberry PI Versions"
 ---
 
-#### RPI4 and RPI5
+__RPI4 and RPI5__
 
 ROS2RPI mounted a top RPI5, as seen in the picture all the ports including display ports can be reached.
 

@@ -5,7 +5,7 @@ title: "Connection"
 description: "Connecting to ROSRider"
 ---
 
-#### ROS2RPI connected to ROSRider with QWIC Cable
+__ROS2RPI connected with QWIC Cable__
 
 The image depicts the physical connection between the ROS2RPi HAT and ROSRider cards using a standard QWIC cable. The ROSRider card's additional QWIC port facilitates cascading configurations, enabling the expansion of the system with multiple ROSRider units or other compatible QWIC devices.
 
@@ -20,7 +20,7 @@ The image depicts the physical connection between the ROS2RPi HAT and ROSRider c
 
 QWIIC cables are a popular choice for connecting various sensors and actuators to microcontrollers and other devices. They feature a 4-wire JST-SH connector on each end. One unique aspect of Qwiic cables is their asymmetrical orientation. One connector will typically be `top-facing` while the other is `bottom-facing.` This deliberate design choice helps with cable routing and prevents accidental misconnections, making it easier to create clean and organized setups.
 
-#### Controlling ROS2RPI
+__Controlling ROS2RPI__
 
 <div class="ck">
     <div class="ck1">
@@ -60,7 +60,7 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
     </div>
 </div>
 
-#### Understanding Hibernation
+__Understanding Hibernation__
 
 The ROSRiders driver leverages the I2C bus to communicate with the ROSRider card.
 By powering the I2C port on the ROS2RPi, a wake-up signal is generated, awakening the ROSRider card from a low-power state.

@@ -5,4 +5,4 @@ title: "Troubleshooting"
 description: "Error Conditions on the ROS2RPI Card"
 ---
 
-### Debug
+__Troubleshooting__
