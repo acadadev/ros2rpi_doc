@@ -21,7 +21,10 @@ The ***ROS2RPI HAT*** is a powerful add-on board designed specifically for Raspb
 - ***Active Cooling:*** A 30mm fan and metal heat sink at the bottom ensures optimal thermal performance, especially during intensive processing or sensor data acquisition.
 - ***Serial Routing*** offers a flexible serial port that can be configured for either LIDAR communication or external debugging. This dual-purpose functionality enables remote debugging and troubleshooting, enhancing the HAT's versatility and ease of use.
 
+__Next Chapter:__ [Connection](01_CONNECTION/README.md)
+
 ***TODO***
+- Installation close up. maybe video.
 - Video of haton-hatoff by driver.
 - Explanation of parameter 0x33 in rosrider, how to instrument, 0x00 to cancel feature
 - Put new photo

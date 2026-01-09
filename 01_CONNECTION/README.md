@@ -65,3 +65,5 @@ Sending one byte to I2C address `0x20` we can control all the peripherals on the
         Remember to log out and log back in for the group membership change to take effect.
     </div>
 </div>
+
+__Next Chapter:__ [Python Code Samples](02_PYTHON/README.md)
