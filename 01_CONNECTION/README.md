@@ -15,19 +15,16 @@ __ROS2RPI connected with QWIC Cable__
 
 The image depicts the physical connection between the ROS2RPi HAT and ROSRider cards using a standard QWIC cable. The ROSRider card's additional QWIC port facilitates cascading configurations, enabling the expansion of the system with multiple ROSRider units or other compatible QWIC devices.
 
-<div class="img_dv">
-  <figure class="img_fg45">
+<div class="img_dv_center">
+  <figure class="img_fgc45">
     <img class="img_sh" src="../images/ros2rpi_qwic.png" alt="Connected to ROSRider with QWIC Cable" style="width: 100%;">
+  </figure>
+  <figure class="img_fgc45">
+    <img class="img_sh" src="../images/qwic_cables.jpg" alt="Various QWIC Cables" style="width: 100%;">
   </figure>
 </div>
 
 QWIIC cables are a popular choice for connecting various sensors and actuators to microcontrollers and other devices. They feature a 4-wire JST-SH connector on each end. One unique aspect of Qwiic cables is their asymmetrical orientation. One connector will typically be `top-facing` while the other is `bottom-facing.` This deliberate design choice helps with cable routing and prevents accidental misconnections, making it easier to create clean and organized setups.
-
-<div class="img_dv">
-  <figure class="img_fg45">
-    <img class="img_sh" src="../images/qwic_connectors.jpg" alt="Various QWIC Cables" style="width: 100%;">
-  </figure>
-</div>
 
 __Controlling ROS2RPI__
 
