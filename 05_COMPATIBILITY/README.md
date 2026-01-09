@@ -7,11 +7,9 @@ description: "ROS2RPI Compatibility with Raspberry PI Versions"
 
 <div class="sl">
     <div class="sl1">
-        > Compatibility
+        > RPI4 and RPI5
     </div>
 </div>
-
-__RPI4 and RPI5__
 
 ROS2RPI mounted a top RPI5, as seen in the picture all the ports including display ports can be reached.
 
