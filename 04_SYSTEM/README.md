@@ -132,3 +132,5 @@ The system will execute `hatoff.py` at shutdown.
 ***Important Note***
 
 While we can leverage Python scripts to manage peripheral control at boot and shutdown, the ROSRiders driver offers a software-based approach to dynamically activate and deactivate peripherals in response to ROS node lifecycle events.
+
+__Next Chapter:__ [Linux Systemd](04_SYSTEM/README.md)

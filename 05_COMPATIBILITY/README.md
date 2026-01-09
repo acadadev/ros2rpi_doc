@@ -20,3 +20,5 @@ ROS2RPI mounted a top RPI5, as seen in the picture all the ports including displ
     <img class="img_sh" src="../images/ros2rpi.png" alt="ROS2RPI mounted a top RPI5" style="width: 100%;">
   </figure>
 </div>
+
+__Next Chapter:__ [Troubleshooting](10_DEBUG/README.md)

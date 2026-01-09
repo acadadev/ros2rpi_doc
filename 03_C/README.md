@@ -46,3 +46,5 @@ uint8_t send_sysctl(int fd, uint8_t command) {
   }
 }
 ```
+
+__Next Chapter:__ [C Code Samples](03_C/README.md)
